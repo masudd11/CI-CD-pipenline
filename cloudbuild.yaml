@@ -3,7 +3,7 @@ steps:
 - name: 'gcr.io/cloud-builders/git'
   args:
     - 'clone'
-    - 'https://source.developers.google.com/p/devops-374608/r/app-repo'
+    - 'https://source.developers.google.com/p/devops-374608/r/github_masudd11_ci-cd-pipenline'
 
 - name: 'gcr.io/cloud-builders/docker'
   args:
