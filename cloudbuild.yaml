@@ -1,0 +1,17 @@
+steps:
+# first clone the github repo in cloud source repo
+- name: 'gcr.io/cloud-builders/git'
+  args:
+    - 'clone'
+    - 'https://source.developers.google.com/p/devops-374608/r/app-repo'
+
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'build'
+    - '-t'
+    - 'gcr.io/devops-374608/flaskapp:1'
+
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'push'
+    - 'gcr.io/devops-374608/flaskapp:1'
