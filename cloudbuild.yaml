@@ -15,3 +15,6 @@ steps:
   args:
     - 'push'
     - 'gcr.io/devops-374608/flaskapp:1'
+
+options:
+  logging: 'CLOUD_LOGGING_ONLY'
